@@ -26,9 +26,9 @@ async function open_terminal(){
   await delay(1500);
   createText("You can run several commands:");
  
-  createCode("about me", "Who am i and what do i do.");
-  createCode("all", "See all commands.");
-  createCode("social -a", "All my social networks.");
+  createCode("about me    Who am i and what do i do.");
+  createCode("ls          See all available commands.");
+  createCode("social -a   All my social networks.");
 
   await delay(500);
   new_line();
@@ -43,7 +43,7 @@ function new_line(){
   p.setAttribute("class", "path")
   p.textContent = "# user";
   span1.textContent = " in";
-  span2.textContent = " ~/heber-leonard";
+  span2.textContent = " ~/jared-stark";
   p.appendChild(span1);
   p.appendChild(span2);
   app.appendChild(p);
@@ -67,7 +67,7 @@ function removeInput(){
 async function getInputValue(){
   
   const value = document.querySelector("input").value;
-  if(value === "all"){
+  if(value === "ls"){
     trueValue(value);
     
     createCode("projects", "My github page with my projects. Follow me there ;)");
