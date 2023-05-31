@@ -43,7 +43,7 @@
 .servicesText.card {
     height: 280px;
     cursor: pointer;
-    display: inline;
+    display: flex;
   }
 .servicesIcon {
     font-size: 36px;
