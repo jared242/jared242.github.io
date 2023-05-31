@@ -43,7 +43,6 @@
 .servicesText.card {
     height: 280px;
     cursor: pointer;
-    display: flex;
   }
 .servicesIcon {
     font-size: 36px;
@@ -53,6 +52,7 @@
 .card-title {
     text-align: center;
     width: 75%;
+    display: flex;
 }
 .card:hover .servicesIcon {
     color: #008000;
