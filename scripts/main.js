@@ -34,7 +34,7 @@ async function open_terminal(){
   createCode("transcripts -du", "Certificate and educational transcripts");
   createCode("mkdir projects", "Project's I've participated in");
   createCode("goals -short OR goals -long", "Short & long-term goals");
-  createCode("manpages", "List of commands");
+  createCode("help", "List of commands");
   createCode("clear", "Clear the terminal.");
 
   await delay(500);
@@ -74,7 +74,7 @@ function removeInput(){
 async function getInputValue(){
   
   const value = document.querySelector("input").value;
-  if(value === "manpages"){
+  if(value === "help"){
     trueValue(value);
     
     createCode("whois jared", "A bit about me.");
@@ -85,7 +85,7 @@ async function getInputValue(){
     createCode("transcripts -du", "Certificate and educational transcripts");
     createCode("mkdir projects", "Project's I've participated in");
     createCode("goals -short OR goals -long", "Short & long-term goals");
-    createCode("manpages", "List of commands");
+    createCode("help", "List of commands");
     createCode("clear", "Clear the terminal.");
     
   }
