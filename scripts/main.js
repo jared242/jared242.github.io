@@ -23,20 +23,21 @@ async function open_terminal(){
   createText("Welcome");
   await delay(700);
   createText("Starting the server...");
-  await delay(1500);
+  await delay(700);
   createText("Thank you for visiting and viewing my profile!");
+  await delay(1400);
   createText("You can run several commands:");
 
-  createCode("whois jared       Who am i and what do i do.");
-  createCode("coverletter       My github page with my projects. Follow me there ;)");
-  createCode("ls -resume        Who am i and what do i do.");
-  createCode("skills -a         All my social networks.");
-  createCode("attributes        Who am i and what do i do.");
-  createCode("transcripts -du   All my social networks.");
-  createCode("mkdir projects    Who am i and what do i do.");
-  createCode("goals -R          All my social networks.");
-  createCode("manpages          List available commands");
-  createCode("clear             Clean the terminal.");
+  createCode("whois jared", "A bit about me.");
+  createCode("coverletter", "A brief coverletter");
+  createCode("ls -resume", "My professional Resume");
+  createCode("skills -a", "Professional Skills");
+  createCode("attributes", "Graduate attributes");
+  createCode("transcripts -du", "Certificate and educational transcripts");
+  createCode("mkdir projects", "Project's I've participated in");
+  createCode("goals -R", "Short & long-term goals");
+  createCode("manpages", "List of commands");
+  createCode("clear", "Clean the terminal.");
 
   await delay(500);
   new_line();
