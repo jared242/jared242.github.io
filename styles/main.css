@@ -43,6 +43,14 @@
     align-items: center;
     justify-content: center;
   }
+  footer {
+    font-size: small;
+    color: #777777;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
   .container{
     display:flex;
     flex-direction: column;
