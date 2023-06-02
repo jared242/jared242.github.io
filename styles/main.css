@@ -35,7 +35,7 @@
     color: rgb(238, 238, 238);
   }
   body{
-    background-color:#393A59;
+    background-color:#FFD700;
   
     height: 100vh;
     font-family: 'Fira Code', monospace;
@@ -48,7 +48,7 @@
     flex-direction: column;
     width:100%;
     max-width:800px;
-    height:500px;
+    height:750px;
     overflow: hidden;
     border-radius: 6px;
     border: 1px solid gray;
