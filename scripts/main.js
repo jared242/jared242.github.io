@@ -33,7 +33,7 @@ async function open_terminal(){
   createCode("attributes", "Graduate attributes");
   createCode("transcripts -du", "Certificate and educational transcripts");
   createCode("mkdir projects", "Project's I've participated in");
-  createCode("goals -R", "Short & long-term goals");
+  createCode("goals -short OR goals -long", "Short & long-term goals");
   createCode("manpages", "List of commands");
   createCode("clear", "Clean the terminal.");
 
@@ -78,13 +78,14 @@ async function getInputValue(){
     trueValue(value);
     
     createCode("whois jared", "A bit about me.");
-    createCode("coverletter", "My github page with my projects. Follow me there ;)");
-    createCode("ls -resume", "Who am i and what do i do.");
-    createCode("skills -a", "All my social networks.");
-    createCode("attributes", "Who am i and what do i do.");
-    createCode("transcripts -du", "All my social networks.");
-    createCode("mkdir projects", "Who am i and what do i do.");
-    createCode("goals -R", "All my social networks.");
+    createCode("coverletter", "A brief coverletter");
+    createCode("ls -resume", "My professional Resume");
+    createCode("skills -a", "Professional Skills");
+    createCode("attributes", "Graduate attributes");
+    createCode("transcripts -du", "Certificate and educational transcripts");
+    createCode("mkdir projects", "Project's I've participated in");
+    createCode("goals -short OR goals -long", "Short & long-term goals");
+    createCode("manpages", "List of commands");
     createCode("clear", "Clean the terminal.");
     
   }
@@ -123,9 +124,13 @@ async function getInputValue(){
     trueValue(value);
     createText("<a href='https://drive.google.com/file/d/1-o8tgx2kkj8YuBc253m1C5AYxbtDUvvT/view?usp=sharing' target='_blank' style='color: #2daccf; text-decoration: underline;'><i class='fab fa-github white'></i> download my resume</a>")
   }
-  else if(value === "goals -R"){
+  else if(value === "goals -short"){
     trueValue(value);
-    createText("<a href='https://drive.google.com/file/d/1-o8tgx2kkj8YuBc253m1C5AYxbtDUvvT/view?usp=sharing' target='_blank'style='color: #2daccf; text-decoration: underline;'><i class='fab fa-github white'></i> download my resume</a>")
+    createText("My short-term goal is to gain leadership experience and transition from my current role within the team by apply for the software support engineer lead position. To do this, I am always looking for opportunities to take on extra responsibilities, which I am currently doing as a mentor for new engineers, as well as starting two projects to improve processes and our SLA times. I have been expressing an interest intaking on some leadership responsibilities so I can show my abilities and get feedback from co-workers and other supervisors. I consistently ensure my technical and problem-solving skills are above average, and always to be as collaborative as possible within the team and organization.")
+  }
+  else if(value === "goals -long"){
+    trueValue(value);
+    createText("As a current software support engineer, my long term aspiration is to become a product manager. I plan for my career to transition from a technical role to a strategic and customer-centric leadership position. Building upon my strong foundation in software support, I aim to use my technical knowledge and understanding of the customer’s needs to drive product development and shape it’s future. I would like to lead a cross-functional team and collaborating with other departments to make our products grow into the the leading industry standard. I believe by using data-driven insights to develop and create product strategies we can exceed the expectations of our customers.<br><br>To achieve this growth, I plan to actively seek opportunities to increase my knowledge in product management methodologies and gain a better understanding of UX design. I also want to improve upon my leadership skills and start to think more strategically. I have a strong passion for innovation and am always looking for opportunities for improvement, which will help me be successful in achieving those goals.")
   }
   else if(value === "whois" || value === "jared"){
     trueValue(value);
