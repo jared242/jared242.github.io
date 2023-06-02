@@ -35,7 +35,11 @@
     color: rgb(238, 238, 238);
   }
   body{
-    background-color:#FFD700;
+    background: url("https://drive.google.com/file/d/1t5Uju50wwcn6QLflVuNe-kFTxF4PpjIU/view?usp=sharing"); 
+    background-size: cover;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    opacity: 0.9;
   
     height: 100vh;
     font-family: 'Fira Code', monospace;
